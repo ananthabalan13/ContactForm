@@ -12,7 +12,6 @@ body{
     justify-content: center;
     background-color: #e0f1e7;
     font-family: "Poppins", sans-serif;
-    /* font-weight: 500; */
     font-style: normal;
     position: relative;
 }
@@ -276,6 +275,25 @@ input[type="radio"]:checked {
 }
 @media screen and (max-width: 480px) {
     .form-inputs.message textarea{
-        height: 100px;
+        height: 150px;
+    }
+    .container{
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap:5px !important;
+        width: 500px;
+    }
+    .tostMessage{
+        width: 400px !important;
+    }
+    .form-inputs .errorMessage{
+        color: red;
+        font-size: 13px;
+        height: 14px;
     }
 }
