@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="tostMessage">
+        <h2><i class="fa-solid fa-circle-check"></i> Message Sent!</h2>
+        <p>Thanks for completing the form . will be in touch soon!</p>
+    </div>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="form">
+            <div class="nameInputs">
+                <div class="form-inputs">
+                    <label for="fName">First Name <span>*</span></label>
+                    <input type="text" id="fName">
+                    <p class="errorMessage"></p>
+                </div>
+                <div class="form-inputs">
+                    <label for="lName">Last Name <span>*</span></label>
+                    <input type="text" id="lName">
+                    <p class="errorMessage"></p>
+                </div>
+            </div>
+            <div class="form-inputs">
+                <label for="email">Email Address <span>*</span></label>
+                <input type="text" id="email">
+                <p class="errorMessage"></p>
+            </div>
+            <div class="form-inputs query">
+                <label>Query Type <span>*</span></label>
+                <div class="queryinputs">
+                    <div class="queryBox"> 
+                        <input type="radio" name="queryType" id="generalEnquiry" value="General Enquiry">
+                        <label for="generalEnquiry">General Enquiry</label>
+                    </div>
+                    <div class="queryBox"> 
+                        <input type="radio" name="queryType" id="supportEnquiry" value="Support Request">
+                        <label for="supportEnquiry">Support Request</label>
+                    </div>
+                </div>
+                <p class="errorMessage"></p>
+            </div>
+            <div class="form-inputs message">
+                <label for="message">Message <span>*</span></label>
+                <textarea name="message" id="message"></textarea>
+                <p class="errorMessage"></p>
+            </div>
+            <div class="form-inputs checkBox">
+                <div class="checkboxDiv">
+                    <input type="checkbox" name="checkBox" id="checkBox">
+                    <label for="checkBox">I Consent to being contacted by the team <span>*</span></label>
+                </div>
+                <p class="errorMessage"></p>
+            </div>
+            <button class="btn primary">Submit</button>
+        </form>
+    
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
